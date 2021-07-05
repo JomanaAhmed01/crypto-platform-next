@@ -58,6 +58,7 @@ export const Wrapper = styled.div`
   background: white;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
 `
 
@@ -127,8 +128,17 @@ export const SearchInput = styled.input`
   font-family: "Graphik";
   padding-left: 10px;
   user-select: initial !important;
-  border: 1px solid #cccccc;
+  border: 1px solid #ffffff;
   border-radius: 30px;
+
+  :focus {
+    outline: none;
+    border: 1px solid #cccccc;
+  }
+
+  :hover {
+    background-color: #e6e6e6;
+  }
 
   @media screen and (max-width: 768px) {
   }
