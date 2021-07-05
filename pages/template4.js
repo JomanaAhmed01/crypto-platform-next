@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styled from "styled-components"
 import Navbar4 from "../components/Navbar/Navbar4"
+import HeroBanner1 from "../components/HeroBanner/HeroBanner1"
 import Footer4 from "../components/Footer/Footer4"
 
 export default function template4() {
@@ -29,6 +30,7 @@ export default function template4() {
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />
+      <HeroBanner1 showSendMessageModal={showSendMessageModal} />
       <Footer4 />
     </PageWrapper>
   )
