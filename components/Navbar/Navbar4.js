@@ -39,8 +39,7 @@ export const Wrapper = styled.div`
   background: white;
   margin-left: auto;
   margin-right: auto;
-  /* position: relative;
-  right: 500px; */
+  margin-top: 20px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
 
   @media screen and (max-width: 1024px) {
