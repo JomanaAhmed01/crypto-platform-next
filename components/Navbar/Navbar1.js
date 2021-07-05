@@ -128,8 +128,17 @@ export const SearchInput = styled.input`
   font-family: "Graphik";
   padding-left: 10px;
   user-select: initial !important;
-  border: 1px solid #cccccc;
+  border: 1px solid #ffffff;
   border-radius: 30px;
+
+  :focus {
+    outline: none;
+    border: 1px solid #cccccc;
+  }
+
+  :hover {
+    background-color: #e6e6e6;
+  }
 
   @media screen and (max-width: 768px) {
   }
