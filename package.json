@@ -17,6 +17,7 @@
     "styled-icons": "^10.35.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.1",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1"
   }
