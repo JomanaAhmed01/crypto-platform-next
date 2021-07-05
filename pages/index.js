@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Navbar1 from "../components/Navbar/Navbar1"
 import Footer1 from "../components/Footer/Footer1"
+import HeroBanner1 from '../components/HeroBanner/HeroBanner1'
 
 export default function Home() {
   const [showSendMessageModal, setShowSendMessageModal] = useState(false)
@@ -28,6 +29,7 @@ export default function Home() {
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />
+      <HeroBanner1 showSendMessageModal={showSendMessageModal} />
       <Footer1 />
     </>
   )
