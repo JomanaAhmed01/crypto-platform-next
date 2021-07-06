@@ -72,7 +72,7 @@ export const SignUpButton = styled(Button)`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   color: #ffffff !important;
   text-transform: capitalize !important;
-  width: 130px !important;
+  width: 190px !important;
   height: 48px !important;
   font-size: 16px !important;
   font-weight: 400 !important;
