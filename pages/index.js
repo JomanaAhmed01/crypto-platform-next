@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Navbar1 from "../components/Navbar/Navbar1"
+import Overlay from "../components/HeroBanner/Overlay"
+import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
 import HeroBanner1 from '../components/HeroBanner/HeroBanner1'
 import TableSection from "../components/Table/TableSection"
 import Footer1 from "../components/Footer/Footer1"
@@ -30,6 +32,11 @@ export default function Home() {
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />
+      {showSendMessageModal ? (
+        <Overlay>
+          <SendMessageModal handleCloseModal={handleCloseModal} />
+        </Overlay>
+      ) : null}
       <HeroBanner1 showSendMessageModal={showSendMessageModal} />
       <TableSection handleClickTrading={handleClickTrading} />
       <Footer1 />
