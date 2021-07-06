@@ -2,7 +2,7 @@ import { useState } from "react"
 import Navbar1 from "../components/Navbar/Navbar1"
 import Footer1 from "../components/Footer/Footer1"
 import HeroBanner1 from '../components/HeroBanner/HeroBanner1'
-import DesktopTable from '../components/Table/DesktopTable'
+import TableSection from "../components/Table/TableSection"
 
 export default function Home() {
   const [showSendMessageModal, setShowSendMessageModal] = useState(false)
@@ -31,7 +31,7 @@ export default function Home() {
         showSendMessageModal={showSendMessageModal}
       />
       <HeroBanner1 showSendMessageModal={showSendMessageModal} />
-      <DesktopTable />
+      <TableSection handleClickTrading={handleClickTrading} />
       <Footer1 />
     </>
   )
