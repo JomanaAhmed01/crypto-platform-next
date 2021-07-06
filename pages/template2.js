@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Navbar2 from "../components/Navbar/Navbar2"
 import Overlay from "../components/HeroBanner/Overlay"
 import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
+import TradingModalHolder from "../components/TradingModal/TradingModalHolder"
 import HeroBanner2 from '../components/HeroBanner/HeroBanner2'
 import TableSection from "../components/Table/TableSection"
 import Footer2 from "../components/Footer/Footer2"
@@ -36,6 +37,11 @@ export default function template2() {
       {showSendMessageModal ? (
         <Overlay>
           <SendMessageModal handleCloseModal={handleCloseModal} />
+        </Overlay>
+      ) : null}
+      {showTradingModal ? (
+        <Overlay>
+          <TradingModalHolder handleCloseTrading={handleCloseTrading} />
         </Overlay>
       ) : null}
       <HeroBanner2 />
