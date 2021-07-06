@@ -2,6 +2,7 @@ import { useState } from "react"
 import Navbar3 from "../components/Navbar/Navbar3"
 import Overlay from "../components/HeroBanner/Overlay"
 import SendMessageModal3 from "../components/SendMessageModal/SendMessageModal3"
+import TradingModalHolder from '../components/TradingModal/TradingModalHolder'
 import HeroBanner3 from "../components/HeroBanner/HeroBanner3"
 import TableSection from "../components/Table/TableSection"
 import Footer3 from "../components/Footer/Footer3"
