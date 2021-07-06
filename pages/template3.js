@@ -1,12 +1,12 @@
 import { useState } from "react"
-import Navbar1 from "../components/Navbar/Navbar1"
+import Navbar3 from "../components/Navbar/Navbar3"
 import Overlay from "../components/HeroBanner/Overlay"
-import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
-import HeroBanner1 from '../components/HeroBanner/HeroBanner1'
+import SendMessageModal3 from "../components/SendMessageModal/SendMessageModal3"
+import HeroBanner3 from "../components/HeroBanner/HeroBanner3"
 import TableSection from "../components/Table/TableSection"
-import Footer1 from "../components/Footer/Footer1"
+import Footer3 from "../components/Footer/Footer3"
 
-export default function Home() {
+export default function template3() {
   const [showSendMessageModal, setShowSendMessageModal] = useState(false)
   const [showTradingModal, setShowTradingModal] = useState(false)
 
@@ -28,18 +28,20 @@ export default function Home() {
 
   return (
     <>
-      <Navbar1
-        handleClickModal={handleClickModal}
-        showSendMessageModal={showSendMessageModal}
-      />
+      <Navbar3 handleClickModal={handleClickModal} />
       {showSendMessageModal ? (
         <Overlay>
-          <SendMessageModal handleCloseModal={handleCloseModal} />
+          <SendMessageModal3 handleCloseModal={handleCloseModal} />
         </Overlay>
       ) : null}
-      <HeroBanner1 showSendMessageModal={showSendMessageModal} />
+      {showTradingModal ? (
+        <Overlay>
+          <TradingModalHolder handleCloseTrading={handleCloseTrading} />
+        </Overlay>
+      ) : null}
+      <HeroBanner3 showSendMessageModal={showSendMessageModal} />
       <TableSection handleClickTrading={handleClickTrading} />
-      <Footer1 />
+      <Footer3 />
     </>
   )
 }
