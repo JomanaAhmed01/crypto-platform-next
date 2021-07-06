@@ -2,6 +2,7 @@ import { useState } from "react"
 import styled from "styled-components"
 import Navbar4 from "../components/Navbar/Navbar4"
 import HeroBanner1 from "../components/HeroBanner/HeroBanner1"
+import TableSection from "../components/Table/TableSection"
 import Footer4 from "../components/Footer/Footer4"
 
 export default function template4() {
@@ -31,6 +32,7 @@ export default function template4() {
         showSendMessageModal={showSendMessageModal}
       />
       <HeroBanner1 showSendMessageModal={showSendMessageModal} />
+      <TableSection handleClickTrading={handleClickTrading} />
       <Footer4 />
     </PageWrapper>
   )
