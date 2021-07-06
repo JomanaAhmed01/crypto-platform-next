@@ -4,7 +4,6 @@ import Navbar2 from "../components/Navbar/Navbar2"
 import HeroBanner2 from '../components/HeroBanner/HeroBanner2'
 import TableSection from "../components/Table/TableSection"
 import Footer2 from "../components/Footer/Footer2"
-import Footer2 from "../components/Footer/Footer2"
 
 export default function template2() {
   const [showTradingModal, setShowTradingModal] = useState(false)
