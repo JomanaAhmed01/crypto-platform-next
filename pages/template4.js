@@ -1,6 +1,8 @@
 import { useState } from "react"
 import styled from "styled-components"
 import Navbar4 from "../components/Navbar/Navbar4"
+import Overlay from "../components/HeroBanner/Overlay"
+import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
 import HeroBanner1 from "../components/HeroBanner/HeroBanner1"
 import TableSection from "../components/Table/TableSection"
 import Footer4 from "../components/Footer/Footer4"
@@ -31,6 +33,11 @@ export default function template4() {
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />
+      {showSendMessageModal ? (
+        <Overlay>
+          <SendMessageModal handleCloseModal={handleCloseModal} />
+        </Overlay>
+      ) : null}
       <HeroBanner1 showSendMessageModal={showSendMessageModal} />
       <TableSection handleClickTrading={handleClickTrading} />
       <Footer4 />
