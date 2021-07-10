@@ -17,7 +17,7 @@ function DesktopTable({ handleClickTrading }) {
       </HeaderWrapper>
       <TableWrapper>
         <EmptyState />
-        {/* <Tr>
+        <Tr>
           <TdImageName>
             <Image src="/img/bitcoin.jpg" /> Bitcoin{" "}
             <CryptoCode>BTC</CryptoCode>
@@ -31,7 +31,7 @@ function DesktopTable({ handleClickTrading }) {
               Trade
             </TradeButton>{" "}
           </TdTradeButton>
-        </Tr> */}
+        </Tr>
       </TableWrapper>
     </>
   )
