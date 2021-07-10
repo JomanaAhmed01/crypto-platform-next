@@ -824,9 +824,9 @@ export const MobileSecondInputWrapper = styled.div`
 
 export const MobileInputWrapper = styled.div`
   border: 1px solid gray;
-  padding: 6px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
   border-radius: 4px;
 
@@ -856,9 +856,12 @@ export const MobileInput = styled.input`
   padding-left: 10px;
   user-select: initial !important;
   border: 1px solid #ffffff;
-  font-size: 13px;
   font-size: 100%;
   -webkit-appearance: none;
+
+  :focus {
+    outline: none;
+  }
 
   @media screen and (max-width: 1325px) {
   }
@@ -883,7 +886,7 @@ export const MobileNgnButton = styled.p`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 7px;
   margin-right: 10px;
 `
 
@@ -896,7 +899,7 @@ export const MobileBtcButton = styled.p`
   font-weight: 400;
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 5px;
 `
 
 export const MobileApproximately = styled.p`
@@ -924,7 +927,7 @@ export const MobilePasteButton = styled.p`
   height: 35px;
   text-align: center;
   border-radius: 4px;
-  padding-top: 9px;
+  padding-top: 7px;
   cursor: pointer;
 `
 
