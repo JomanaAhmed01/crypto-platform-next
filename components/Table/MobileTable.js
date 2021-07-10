@@ -1,17 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "@material-ui/core/Button"
-import Link from "next/link"
 import { GraphUp } from "@styled-icons/bootstrap/GraphUp"
 import { Error } from "@styled-icons/boxicons-regular/Error"
 
-function MobileTable({ handleClickTrading }) {
+function MobileTable() {
   return (
     <>
       <TableWrapper>
-        <ErrorWrapper>
-          <ErrorIcon />
-        </ErrorWrapper>
         <GraphArrowWrapper>
           <GraphArrow />
         </GraphArrowWrapper>
