@@ -401,9 +401,9 @@ export const SecondInputWrapper = styled.div`
 
 export const InputWrapper = styled.div`
   border: 1px solid gray;
-  padding: 6px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
   border-radius: 4px;
 
@@ -435,6 +435,10 @@ export const Input = styled.input`
   border: 1px solid #ffffff;
   font-size: 13px;
 
+  :focus {
+    outline: none;
+  }
+
   @media screen and (max-width: 1325px) {
   }
 `
@@ -458,7 +462,7 @@ export const NgnButton = styled.p`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 7px;
   margin-right: 15px;
 `
 
@@ -471,7 +475,7 @@ export const BtcButton = styled.p`
   font-weight: 400;
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 6px;
 `
 
 export const Approximately = styled.p`
@@ -491,7 +495,7 @@ export const PasteButton = styled.p`
   height: 35px;
   text-align: center;
   border-radius: 4px;
-  padding-top: 9px;
+  padding-top: 7px;
   cursor: pointer;
 `
 
