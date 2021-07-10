@@ -313,38 +313,46 @@ export const TabsWrapper = styled.div`
 
 export const SellTabWrapper = styled.div`
   border: 1px solid #000000;
-  padding: 30px 95px;
+  width: 221px;
+  height: 80px;
   border-radius: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
-  @media screen and (max-width: 1250px) {
-    padding: 30px 70px;
+  @media screen and (max-width: 1200px) {
+    width: 150px;
   }
 `
 
 export const BuyTabWrapper = styled.div`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
-  padding: 30px 95px;
+  width: 221px;
+  height: 80px;
   border-radius: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
-  @media screen and (max-width: 1250px) {
-    padding: 30px 70px;
+  @media screen and (max-width: 1200px) {
+    width: 150px;
   }
 `
 
 export const SellTab = styled.p`
-  cursor: pointer;
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
+  cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 10px;
 `
 
 export const BuyTab = styled.p`
   cursor: pointer;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 10px;
 `
 
 export const HeaderWrapper = styled.div`
