@@ -67,7 +67,7 @@ export const LogoWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 60%;
+    width: 20%;
   }
 `
 

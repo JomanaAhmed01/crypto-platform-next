@@ -34,10 +34,6 @@ export const Wrapper = styled.div`
   margin-right: auto;
   margin-top: 20px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
-
-  @media screen and (max-width: 1325px) {
-    width: 250px;
-  }
 `
 
 export const ButtonWrapper = styled.div`
