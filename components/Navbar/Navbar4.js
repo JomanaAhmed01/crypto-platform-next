@@ -1,25 +1,44 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Button from "@material-ui/core/Button"
 import { Close } from "@styled-icons/evaicons-solid/Close"
 import { Envelope } from "@styled-icons/fa-regular/"
-import Link from "next/link"
+import { Search } from "@styled-icons/evil/Search"
 
-function Navbar4({ showSendMessageModal }) {
+function Navbar4({ handleClickModal, showSendMessageModal }) {
+  const [showSearchInput, setShowSearchInput] = useState(false)
+
+  function handleClick() {
+    if (showSearchInput === true) {
+      setShowSearchInput(false)
+    } else if (showSearchInput === false) {
+      setShowSearchInput(true)
+    }
+  }
+
   return (
     <>
-      <Wrapper hideNavbar={showSendMessageModal}>
+      <Wrapper
+        hideNavbar={showSendMessageModal}
+        showSearchInput={showSearchInput}
+      >
         <LogoWrapper>
           <Logo src="img/slack-logo.jpg"></Logo>
         </LogoWrapper>
-        <Link href="/send-message">
-          <EnvelopeIcon />
-        </Link>
-        <Link href="/send-message">
-          <ButtonWrapper>
-            <SignUpButton variant="contained">Contact</SignUpButton>{" "}
-          </ButtonWrapper>
-        </Link>
+        <EnvelopeIcon onClick={handleClickModal} />
+        <ButtonWrapper>
+          <SignUpButton variant="contained" onClick={handleClickModal}>
+            Contact
+          </SignUpButton>{" "}
+        </ButtonWrapper>
+        {showSearchInput ? (
+          <SearchInputWrapper>
+            <SearchInput placeholder="Search here..." />
+          </SearchInputWrapper>
+        ) : null}
+        <SearchIconWrapper onClick={handleClick}>
+          <SearchIcon />
+        </SearchIconWrapper>
       </Wrapper>
     </>
   )
@@ -28,7 +47,7 @@ function Navbar4({ showSendMessageModal }) {
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   border: 1px solid black;
-  width: 250px;
+  width: ${(props) => (props.showSearchInput === true ? "420px" : "320px")};
   padding: 15px 25px;
   border-radius: 50px;
   position: sticky;
@@ -41,15 +60,6 @@ export const Wrapper = styled.div`
   margin-right: auto;
   margin-top: 20px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
-
-  @media screen and (max-width: 1024px) {
-    margin-left: 70px;
-  }
-
-  @media screen and (max-width: 480px) {
-    left: 0;
-    margin-left: 40px;
-  }
 `
 
 export const LogoWrapper = styled.div`
@@ -57,7 +67,7 @@ export const LogoWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 60%;
+    width: 20%;
   }
 `
 
@@ -66,6 +76,7 @@ export const Logo = styled.img`
 `
 
 export const ButtonWrapper = styled.div`
+  margin-left: 10px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -97,6 +108,51 @@ export const EnvelopeIcon = styled(Envelope)`
 export const CloseIcon = styled(Close)`
   width: 30px;
   height: 30px;
+
+  @media screen and (max-width: 768px) {
+  }
+`
+
+export const SearchInputWrapper = styled.div`
+  margin-left: 10px;
+  @media screen and (max-width: 768px) {
+  }
+`
+
+export const SearchInput = styled.input`
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  font-family: "Graphik";
+  padding-left: 10px;
+  user-select: initial !important;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+
+  :focus {
+    outline: none;
+    border: 1px solid #cccccc;
+  }
+
+  :hover {
+    background-color: #e6e6e6;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+`
+
+export const SearchIconWrapper = styled.div`
+  @media screen and (max-width: 768px) {
+  }
+`
+
+export const SearchIcon = styled(Search)`
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
   }

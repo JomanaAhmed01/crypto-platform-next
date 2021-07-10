@@ -44,7 +44,6 @@ export const Title = styled.p`
 export const SubTitle = styled.p`
   font-family: "Graphik";
   font-weight: 400;
-  margin-top: 20px;
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   text-align: center;
   width: 450px;
@@ -60,7 +59,6 @@ export const SubTitle = styled.p`
 export const SecondSubTitle = styled.p`
   font-family: "Graphik";
   font-weight: 500;
-  margin-top: 120px;
   margin-bottom: 50px;
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   text-align: center;

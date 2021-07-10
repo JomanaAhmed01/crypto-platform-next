@@ -313,38 +313,46 @@ export const TabsWrapper = styled.div`
 
 export const SellTabWrapper = styled.div`
   border: 1px solid #000000;
-  padding: 30px 95px;
+  width: 221px;
+  height: 80px;
   border-radius: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
-  @media screen and (max-width: 1250px) {
-    padding: 30px 70px;
+  @media screen and (max-width: 1200px) {
+    width: 150px;
   }
 `
 
 export const BuyTabWrapper = styled.div`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
-  padding: 30px 95px;
+  width: 221px;
+  height: 80px;
   border-radius: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
-  @media screen and (max-width: 1250px) {
-    padding: 30px 70px;
+  @media screen and (max-width: 1200px) {
+    width: 150px;
   }
 `
 
 export const SellTab = styled.p`
-  cursor: pointer;
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
+  cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 10px;
 `
 
 export const BuyTab = styled.p`
   cursor: pointer;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 10px;
 `
 
 export const HeaderWrapper = styled.div`
@@ -393,9 +401,9 @@ export const SecondInputWrapper = styled.div`
 
 export const InputWrapper = styled.div`
   border: 1px solid gray;
-  padding: 6px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
   border-radius: 4px;
 
@@ -427,6 +435,10 @@ export const Input = styled.input`
   border: 1px solid #ffffff;
   font-size: 13px;
 
+  :focus {
+    outline: none;
+  }
+
   @media screen and (max-width: 1325px) {
   }
 `
@@ -450,7 +462,7 @@ export const NgnButton = styled.p`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 7px;
   margin-right: 15px;
 `
 
@@ -463,7 +475,7 @@ export const BtcButton = styled.p`
   font-weight: 400;
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 6px;
 `
 
 export const Approximately = styled.p`
@@ -483,7 +495,7 @@ export const PasteButton = styled.p`
   height: 35px;
   text-align: center;
   border-radius: 4px;
-  padding-top: 9px;
+  padding-top: 7px;
   cursor: pointer;
 `
 
@@ -812,9 +824,9 @@ export const MobileSecondInputWrapper = styled.div`
 
 export const MobileInputWrapper = styled.div`
   border: 1px solid gray;
-  padding: 6px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
   border-radius: 4px;
 
@@ -844,9 +856,12 @@ export const MobileInput = styled.input`
   padding-left: 10px;
   user-select: initial !important;
   border: 1px solid #ffffff;
-  font-size: 13px;
   font-size: 100%;
   -webkit-appearance: none;
+
+  :focus {
+    outline: none;
+  }
 
   @media screen and (max-width: 1325px) {
   }
@@ -871,7 +886,7 @@ export const MobileNgnButton = styled.p`
   background-image: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 7px;
   margin-right: 10px;
 `
 
@@ -884,7 +899,7 @@ export const MobileBtcButton = styled.p`
   font-weight: 400;
   border-radius: 4px;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 5px;
 `
 
 export const MobileApproximately = styled.p`
@@ -912,7 +927,7 @@ export const MobilePasteButton = styled.p`
   height: 35px;
   text-align: center;
   border-radius: 4px;
-  padding-top: 9px;
+  padding-top: 7px;
   cursor: pointer;
 `
 

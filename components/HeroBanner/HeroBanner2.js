@@ -26,7 +26,9 @@ export const Wrapper = styled.div`
   justify-content: center;
 `
 
-export const TextWrapper = styled.div``
+export const TextWrapper = styled.div`
+  margin-top: -100px;
+`
 
 export const Title = styled.p`
   font-family: "Boing";
@@ -79,7 +81,6 @@ export const SecondSubTitle = styled.p`
   color: #011b33;
   width: 40%;
   text-align: left;
-  margin-top: 90px;
   margin-left: 150px;
 
   @media screen and (max-width: 1024px) {

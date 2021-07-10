@@ -60,7 +60,6 @@ export const Wrapper = styled.div`
   width: 400px;
   border-radius: 4px;
   position: sticky;
-  /* top: 120px; */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -113,7 +112,7 @@ export const SubTitle = styled.p`
   font-family: "Graphik";
   font-weight: 500;
   font-size: 20px;
-  padding-top: 5px;
+  margin-top: -9px;
 
   @media screen and (max-width: 1325px) {
   }
