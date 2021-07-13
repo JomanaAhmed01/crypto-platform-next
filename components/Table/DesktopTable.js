@@ -16,11 +16,150 @@ function DesktopTable({ handleClickTrading }) {
         <HeaderTrade>Trade</HeaderTrade>
       </HeaderWrapper>
       <TableWrapper>
-        <EmptyState />
         <Tr>
           <TdImageName>
             <Image src="/img/bitcoin.jpg" /> Bitcoin{" "}
             <CryptoCode>BTC</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+        <Tr>
+          <TdImageName>
+            <Image src="/img/ethereum.jpg" /> Ethereum{" "}
+            <CryptoCode>ETH</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/binance.jpg" /> Binance Coin{" "}
+            <CryptoCode>BNB</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/tether.jpg" /> Tether <CryptoCode>USDT</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/cardano.jpg" /> Cardano{" "}
+            <CryptoCode>ADA</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/polkadot.jpg" /> Polkadot{" "}
+            <CryptoCode>DOT</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/xrp.jpg" /> XRP <CryptoCode>XRP</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/uniswap.jpg" /> Uniswap{" "}
+            <CryptoCode>UNI</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/theta.jpg" /> Theta <CryptoCode>THETA</CryptoCode>
+          </TdImageName>
+          <TdPrice>NGN 22,859,418.81</TdPrice>
+          <TdChange>+12.33%</TdChange>
+          <TdSellRate>450/NGN</TdSellRate>
+          <TdBuyRate>550/NGN</TdBuyRate>
+          <TdTradeButton>
+            <TradeButton variant="contained" onClick={handleClickTrading}>
+              Trade
+            </TradeButton>{" "}
+          </TdTradeButton>
+        </Tr>
+
+        <Tr>
+          <TdImageName>
+            <Image src="/img/litecoin.jpg" /> Litecoin{" "}
+            <CryptoCode>LTC</CryptoCode>
           </TdImageName>
           <TdPrice>NGN 22,859,418.81</TdPrice>
           <TdChange>+12.33%</TdChange>
@@ -50,32 +189,6 @@ export const TableWrapper = styled.table`
 
 export const Tr = styled.tr`
   border: 1px solid red;
-`
-
-export const ErrorWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-`
-
-export const ErrorIcon = styled(Error)`
-  width: 100px;
-  height: 100px;
-  color: #ff3333;
-`
-
-export const GraphArrowWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-`
-
-export const GraphArrow = styled(GraphUp)`
-  width: 150px;
-  height: 150px;
-  color: #d8d8d8;
 `
 
 export const HeaderWrapper = styled.div`
@@ -112,7 +225,7 @@ export const HeaderChange = styled.p`
   font-weight: 400;
   text-align: left;
   padding-left: 20px;
-  margin-right: 50px;
+  margin-right: 70px;
 `
 
 export const HeaderSellRate = styled.p`
