@@ -28,7 +28,7 @@
 
 ![image](https://user-images.githubusercontent.com/66492958/125177946-5cc0df80-e1e0-11eb-9c2f-ef78f546b2e6.png)
 ![image](https://user-images.githubusercontent.com/66492958/125177938-44e95b80-e1e0-11eb-9212-d18c09621bee.png)
-![image](https://user-images.githubusercontent.com/66492958/125177958-80842580-e1e0-11eb-8213-956429474f8c.png)
+![image](https://user-images.githubusercontent.com/66492958/125516696-e6dd568e-4c14-4ee3-a04a-06ed1f7e1295.png)
 </div>
 
 The Home Page consists of 4 main sections:
