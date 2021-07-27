@@ -4,13 +4,192 @@ import Button from "@material-ui/core/Button"
 import { GraphUp } from "@styled-icons/bootstrap/GraphUp"
 import { Error } from "@styled-icons/boxicons-regular/Error"
 
-function MobileTable() {
+function MobileTable({ handleClickTrading }) {
   return (
     <>
       <TableWrapper>
-        <GraphArrowWrapper>
+        {/* <GraphArrowWrapper>
           <GraphArrow />
-        </GraphArrowWrapper>
+        </GraphArrowWrapper> */}
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/bitcoin.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Bitcoin</CryptoName>
+                <CryptoCode>BTC</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/ethereum.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Ethereum</CryptoName>
+                <CryptoCode>ETH</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/binance.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Binance Coin</CryptoName>
+                <CryptoCode>BNB</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/tether.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Tether</CryptoName>
+                <CryptoCode>USDT</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/cardano.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Cardano</CryptoName>
+                <CryptoCode>ADA</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/polkadot.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Polkadot</CryptoName>
+                <CryptoCode>DOT</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/xrp.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>XRP</CryptoName>
+                <CryptoCode>XRP</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/uniswap.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Uniswap</CryptoName>
+                <CryptoCode>UNI</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/theta.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Theta</CryptoName>
+                <CryptoCode>THETA</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
+
+        <Tr>
+          <TrWrapper onClick={handleClickTrading}>
+            <TdImageName>
+              <Image src="/img/litecoin.jpg" />{" "}
+              <CryptoWrapper>
+                <CryptoName>Litecoin</CryptoName>
+                <CryptoCode>LTC</CryptoCode>
+              </CryptoWrapper>
+            </TdImageName>
+
+            <SellRateBuyRateWrapper>
+              <SellRate>Sell 450/NGN</SellRate>
+              <BuyRate>Buy 550/NGN</BuyRate>
+              <Change>+12.03%</Change>
+            </SellRateBuyRateWrapper>
+          </TrWrapper>
+        </Tr>
       </TableWrapper>
     </>
   )
@@ -64,17 +243,21 @@ export const TrWrapper = styled.div`
   cursor: pointer;
 `
 
-export const CryptoWrapper = styled.div``
+export const CryptoWrapper = styled.div`
+  
+`
 
-export const SellRateBuyRateWrapper = styled.div``
+export const SellRateBuyRateWrapper = styled.div`
+  /* border: 3px solid red; */
+  position: relative;
+  bottom: -20px;
+`
 
 export const CryptoName = styled.p`
   font-weight: 400;
 `
 
-export const Tr = styled.tr`
-  border: 1px solid red;
-`
+export const Tr = styled.tr``
 
 export const Th = styled.th`
   font-weight: 500;
