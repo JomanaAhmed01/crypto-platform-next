@@ -235,7 +235,6 @@ export const GraphArrow = styled(GraphUp)`
 
 export const TrWrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-right: 10px;
   padding-left: 10px;
@@ -250,7 +249,7 @@ export const CryptoWrapper = styled.div`
 export const SellRateBuyRateWrapper = styled.div`
   /* border: 3px solid red; */
   position: relative;
-  bottom: -20px;
+  bottom: -22px;
 `
 
 export const CryptoName = styled.p`
@@ -278,6 +277,8 @@ export const Image = styled.img`
 export const CryptoCode = styled.td`
   color: gray;
   margin-left: 10px;
+  position: relative;
+  bottom: 13px;
   font-weight: 400;
 `
 

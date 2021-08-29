@@ -47,7 +47,7 @@ function Navbar4({ handleClickModal, showSendMessageModal }) {
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   border: 1px solid black;
-  width: ${(props) => (props.showSearchInput === true ? "420px" : "320px")};
+  width: ${(props) => (props.showSearchInput === true ? "350px" : "320px")};
   padding: 15px 25px;
   border-radius: 50px;
   position: sticky;
@@ -122,7 +122,7 @@ export const SearchInputWrapper = styled.div`
 export const SearchInput = styled.input`
   width: 100%;
   height: 48px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: white;
   color: black;
   font-family: "Graphik";
@@ -130,6 +130,10 @@ export const SearchInput = styled.input`
   user-select: initial !important;
   border: 1px solid #ffffff;
   border-radius: 30px;
+  user-select: initial !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   :focus {
     outline: none;
