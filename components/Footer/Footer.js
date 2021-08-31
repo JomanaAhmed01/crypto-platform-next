@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Footer() {
   return (
     <Wrapper>
-      <Title>Website Name &#169;2021</Title>
+      <Title>Crypto Exchange &#169;2021</Title>
     </Wrapper>
   )
 }
