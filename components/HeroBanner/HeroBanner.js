@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-function HeroBanner1({ showSendMessageModal }) {
+function HeroBanner({ showSendMessageModal }) {
   return (
     <Wrapper showSendMessageModal={showSendMessageModal}>
       <Title>Welcome to Crypto exchange</Title>
@@ -72,4 +72,4 @@ export const SecondSubTitle = styled.p`
   }
 `
 
-export default HeroBanner1
+export default HeroBanner
