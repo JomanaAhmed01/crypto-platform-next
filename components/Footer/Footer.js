@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-function Footer1() {
+function Footer() {
   return (
     <Wrapper>
       <Title>Website Name &#169;2021</Title>
@@ -24,4 +24,4 @@ export const Title = styled.p`
   font-weight: 400;
 `
 
-export default Footer1
+export default Footer
