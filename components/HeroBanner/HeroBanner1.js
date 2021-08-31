@@ -47,7 +47,7 @@ export const SubTitle = styled.p`
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   text-align: center;
   width: 450px;
-  font-size: 20px;
+  font-size: 23px;
   color: #011b33;
 
   @media screen and (max-width: 768px) {
