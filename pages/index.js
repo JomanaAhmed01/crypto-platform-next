@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Navbar1 from "../components/Navbar/Navbar1"
+import Navbar from "../components/Navbar/Navbar"
 import Overlay from "../components/HeroBanner/Overlay"
 import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
 import TradingModalHolder from '../components/TradingModal/TradingModalHolder'
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar1
+      <Navbar
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />

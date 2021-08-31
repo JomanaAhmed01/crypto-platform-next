@@ -5,7 +5,7 @@ import { Close } from "@styled-icons/evaicons-solid/Close"
 import { Envelope } from "@styled-icons/fa-regular/"
 import { Search } from "@styled-icons/evil/Search"
 
-function Navbar1({ handleClickModal, showSendMessageModal }) {
+function Navbar({ handleClickModal, showSendMessageModal }) {
   const [showSearchInput, setShowSearchInput] = useState(false)
 
   function handleClick() {
@@ -161,4 +161,4 @@ export const SearchIcon = styled(Search)`
   @media screen and (max-width: 768px) {
   }
 `
-export default Navbar1
+export default Navbar
