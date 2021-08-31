@@ -14,7 +14,7 @@ function SendMessageModal({ handleCloseModal }) {
           <Image src="/img/kota.jpg" />
           <TextWrapper>
             <Title>Sending Message To</Title>
-            <SubTitle>Ahmed Tohamy</SubTitle>
+            <SubTitle>Mei Ackerman</SubTitle>
           </TextWrapper>
         </ContactWrapper>
         <InputWrapper>
