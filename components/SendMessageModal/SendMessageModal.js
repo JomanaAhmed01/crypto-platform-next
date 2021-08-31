@@ -63,8 +63,6 @@ export const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
 
