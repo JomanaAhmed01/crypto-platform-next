@@ -62,7 +62,7 @@ function Buy({ handleCloseTrading, changeToSell, changeToProceedToBuy }) {
             <ThirdPartHeaderTextWrapper>
               <ThirdPartHeader>Sending Account Details</ThirdPartHeader>
               <ThirdPartText>
-                Kindly provide the account you'd be paying with. Please note
+                Kindly provide the account you would be paying with. Please note
                 that the payment must be done using the account provided below
                 only. Payment from another account would not be regarded as
                 payment for this transaction.

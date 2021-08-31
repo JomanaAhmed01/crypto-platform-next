@@ -67,7 +67,7 @@ function ProceedToSell({ handleCloseTrading, changeToSell }) {
             </TimerWrapper>
             <ThirdPartButtonWrapper>
               <ProceedPaymentButton onClick={handleCloseTrading}>
-                I've made my payment
+                I have made my payment
               </ProceedPaymentButton>
             </ThirdPartButtonWrapper>
           </ThirdPartOfTheSell>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 function HeroBanner1({ showSendMessageModal }) {
   return (
     <Wrapper showSendMessageModal={showSendMessageModal}>
-      <Title>Welcome to Ahmed's exchange</Title>
+      <Title>Welcome to Crypto exchange</Title>
       <SubTitle>Buy, sell and trade cryptocurrency in minutes.</SubTitle>
       <SecondSubTitle>Start Trading</SecondSubTitle>
     </Wrapper>
