@@ -47,7 +47,7 @@ function Navbar1({ handleClickModal, showSendMessageModal }) {
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   border: 1px solid black;
-  width: ${(props) => (props.showSearchInput === true ? "350px" : "320px")};
+  width: ${(props) => (props.showSearchInput === true ? "400px" : "320px")};
   padding: 15px 25px;
   border-radius: 50px;
   position: sticky;
