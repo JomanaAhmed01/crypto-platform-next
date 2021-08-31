@@ -12,7 +12,7 @@ function MobileTable({ handleClickTrading }) {
           <GraphArrow />
         </GraphArrowWrapper> */}
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/bitcoin.jpg" />{" "}
               <CryptoWrapper>
@@ -30,7 +30,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/ethereum.jpg" />{" "}
               <CryptoWrapper>
@@ -48,7 +48,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/binance.jpg" />{" "}
               <CryptoWrapper>
@@ -66,7 +66,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/tether.jpg" />{" "}
               <CryptoWrapper>
@@ -84,7 +84,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/cardano.jpg" />{" "}
               <CryptoWrapper>
@@ -102,7 +102,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/polkadot.jpg" />{" "}
               <CryptoWrapper>
@@ -120,7 +120,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/xrp.jpg" />{" "}
               <CryptoWrapper>
@@ -138,7 +138,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/uniswap.jpg" />{" "}
               <CryptoWrapper>
@@ -156,7 +156,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/theta.jpg" />{" "}
               <CryptoWrapper>
@@ -174,7 +174,7 @@ function MobileTable({ handleClickTrading }) {
         </Tr>
 
         <Tr>
-          <TrWrapper onClick={handleClickTrading}>
+          <TrWrapper>
             <TdImageName>
               <Image src="/img/litecoin.jpg" />{" "}
               <CryptoWrapper>
@@ -242,9 +242,7 @@ export const TrWrapper = styled.div`
   cursor: pointer;
 `
 
-export const CryptoWrapper = styled.div`
-  
-`
+export const CryptoWrapper = styled.div``
 
 export const SellRateBuyRateWrapper = styled.div`
   /* border: 3px solid red; */

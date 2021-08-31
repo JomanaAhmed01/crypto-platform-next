@@ -1,11 +1,11 @@
 import { useState } from "react"
-import Navbar1 from "../components/Navbar/Navbar1"
+import Navbar from "../components/Navbar/Navbar"
 import Overlay from "../components/HeroBanner/Overlay"
 import SendMessageModal from "../components/SendMessageModal/SendMessageModal"
 import TradingModalHolder from '../components/TradingModal/TradingModalHolder'
-import HeroBanner1 from '../components/HeroBanner/HeroBanner1'
+import HeroBanner from '../components/HeroBanner/HeroBanner'
 import TableSection from "../components/Table/TableSection"
-import Footer1 from "../components/Footer/Footer1"
+import Footer from "../components/Footer/Footer"
 
 export default function Home() {
   const [showSendMessageModal, setShowSendMessageModal] = useState(false)
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar1
+      <Navbar
         handleClickModal={handleClickModal}
         showSendMessageModal={showSendMessageModal}
       />
@@ -43,9 +43,9 @@ export default function Home() {
           <TradingModalHolder handleCloseTrading={handleCloseTrading} />
         </Overlay>
       ) : null}
-      <HeroBanner1 showSendMessageModal={showSendMessageModal} />
+      <HeroBanner showSendMessageModal={showSendMessageModal} />
       <TableSection handleClickTrading={handleClickTrading} />
-      <Footer1 />
+      <Footer />
     </>
   )
 }

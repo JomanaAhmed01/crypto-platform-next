@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { GraphUp } from "@styled-icons/bootstrap/GraphUp"
 import { Error } from "@styled-icons/boxicons-regular/Error"
-import EmptyState from "../../EmptyState"
 
 function DesktopTable({ handleClickTrading }) {
   return (

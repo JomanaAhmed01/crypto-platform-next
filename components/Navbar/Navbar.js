@@ -5,7 +5,7 @@ import { Close } from "@styled-icons/evaicons-solid/Close"
 import { Envelope } from "@styled-icons/fa-regular/"
 import { Search } from "@styled-icons/evil/Search"
 
-function Navbar4({ handleClickModal, showSendMessageModal }) {
+function Navbar({ handleClickModal, showSendMessageModal }) {
   const [showSearchInput, setShowSearchInput] = useState(false)
 
   function handleClick() {
@@ -47,7 +47,7 @@ function Navbar4({ handleClickModal, showSendMessageModal }) {
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   border: 1px solid black;
-  width: ${(props) => (props.showSearchInput === true ? "350px" : "320px")};
+  width: ${(props) => (props.showSearchInput === true ? "400px" : "320px")};
   padding: 15px 25px;
   border-radius: 50px;
   position: sticky;
@@ -161,4 +161,4 @@ export const SearchIcon = styled(Search)`
   @media screen and (max-width: 768px) {
   }
 `
-export default Navbar4
+export default Navbar

@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-function HeroBanner3() {
+function HeroBanner({ showSendMessageModal }) {
   return (
-    <Wrapper>
-      <Title>Welcome to Ahmed's exchange</Title>
+    <Wrapper showSendMessageModal={showSendMessageModal}>
+      <Title>Welcome to Crypto exchange</Title>
       <SubTitle>Buy, sell and trade cryptocurrency in minutes.</SubTitle>
       <SecondSubTitle>Start Trading</SecondSubTitle>
     </Wrapper>
@@ -44,11 +44,10 @@ export const Title = styled.p`
 export const SubTitle = styled.p`
   font-family: "Graphik";
   font-weight: 400;
-  margin-top: 20px;
   color: linear-gradient(to bottom, #18283b, #1a1f24 100%);
   text-align: center;
   width: 450px;
-  font-size: 20px;
+  font-size: 23px;
   color: #011b33;
 
   @media screen and (max-width: 768px) {
@@ -73,4 +72,4 @@ export const SecondSubTitle = styled.p`
   }
 `
 
-export default HeroBanner3
+export default HeroBanner

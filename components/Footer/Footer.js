@@ -1,20 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
-function Footer2() {
+function Footer() {
   return (
     <Wrapper>
-      <Title>Website Name</Title>
-      <SubTitle>&#169;2021</SubTitle>
+      <Title>Crypto Exchange &#169;2021</Title>
     </Wrapper>
   )
 }
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  justify-content: center;
   padding-bottom: 40px;
   background-color: white;
 
@@ -24,12 +21,7 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.p`
-  font-weight: bold;
   font-weight: 400;
 `
 
-export const SubTitle = styled.p`
-  font-weight: 400;
-`
-
-export default Footer2
+export default Footer
