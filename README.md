@@ -1,4 +1,8 @@
+<div align="center">
+    <img title="NEXT" src="https://user-images.githubusercontent.com/66492958/132075326-303b3b28-aa9b-4029-a4de-b3286218dd24.png" alt="NEXT>JS" width="500" />
+  </div>
 <h1 align="center">
+    
   <br>
   Crypto-Currency Marketplace Built Using Next.JS & Styled-Components
 </h1>
