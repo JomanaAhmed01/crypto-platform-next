@@ -1,10 +1,13 @@
 <h1 align="center">
   <br>
-  Crypto-Selling Website Built Using Next.JS & Styled-Components
+  Crypto-Currency Marketplace Built Using Next.JS & Styled-Components
 </h1>
 
 <p><font size="3">
-  This is a Crypto-Selling Website built using <strong><em>Next.JS</em></strong> & <strong><em>Styled-Components</em></strong>. it's a small crypto-selling website with my own design touch, showing my abilities in Next.JS & Styled-Components to build something advanced by Next.JS & Styled-Components. It contains the home page, send-message page & selling / buying crypto currencies.
+  This is a Crypto-Currency Marketplace built using <strong><em>Next.JS</em></strong> & <strong><em>Styled-Components</em></strong>. it's a small Crypto-Currency Marketplace with my own design touch, showing my abilities in Next.JS & Styled-Components. It contains the home page, send-message page & trade modals.
+  <br>
+  <br>
+  <strong>Take a look at the live version here: https://bit.ly/crypto-exchange-live01 :octocat: :heart_eyes:</strong> 
 </p>
 
 ## Table of Contents
@@ -25,10 +28,11 @@
  # Home Page
 
 <div align="center"><a name="menu"></a>
+  
+  ![image](https://user-images.githubusercontent.com/66492958/132075171-bae66ab6-1f84-42d9-96ee-5f377ea1a14b.png)
+  ![image](https://user-images.githubusercontent.com/66492958/132075227-d3e2b091-4dc4-4de7-b9cc-762ab6e2459d.png)
 
-![image](https://user-images.githubusercontent.com/66492958/125177946-5cc0df80-e1e0-11eb-9c2f-ef78f546b2e6.png)
-![image](https://user-images.githubusercontent.com/66492958/125177938-44e95b80-e1e0-11eb-9212-d18c09621bee.png)
-![image](https://user-images.githubusercontent.com/66492958/125516696-e6dd568e-4c14-4ee3-a04a-06ed1f7e1295.png)
+
 </div>
 
 The Home Page consists of 4 main sections:
